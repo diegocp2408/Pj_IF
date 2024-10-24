@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --white1: #fff;
+    --white2: #729b6d;
+    --white3: rgb(78, 119, 78);
+    --white4: rgb(119, 136, 119);
+    --gray: rgb(117, 153, 116);
+    --gray1: rgb(218, 218, 218);
+    --background: rgb(79, 121, 78);
+    --dark1: rgb(0, 27, 0);
+    --dark2: rgb(0, 41, 0);
+    --dark3: rgb(0, 71, 0);
+    --dark4: rgb(0, 100, 0);
+    --red2: rgb(192, 35, 35);
+    --green: rgb(2, 139, 2);
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: var(--white4);
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--dark4);
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--dark3);
+}
+
+body{
+    background-color: var(--white3);
+    height: 100vh;
+    font-family: 'Lato';
+}
+
+header{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: .5rem;
+    background-color: var(--dark2);
+    min-height: 50px;
+}
+
+.box-img-header{
+    height: 100%;
+}
+.img-logo{
+    max-width: 180px;
+}
+
+nav{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.nav-links{
+    text-decoration: none;
+    color: var(--white1);
+    transition: .4s;
+    font-weight: bold;
+    letter-spacing: .1rem;
+}
+.nav-links:hover{
+    color: var(--gray);
+    transition: .4s;
+    text-decoration: underline;
+}
+
+.btn-actions{
+    display: flex;
+    gap: 2rem;
+}
+:is(button,.link-action){
+    padding: .6rem;
+    font-size: .9rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+:is(button, .link-instagram, .caret-up-square){
+    background-color: transparent;
+    padding: .2rem;
+    font-size: .5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn-action{
+    background-color: transparent;
+    padding: .6rem;
+    font-size: .9rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.btn-action:hover{
+    background-color: var(--gray);
+    color: var(--dark4);
+    font-weight: bold;
+    transition: .4s;
+}
+.link-action{
+    text-decoration: none;
+    width: 200px;
+    text-align: center;
+    color: var(--dark1);
+    border: 1px solid var(--dark1);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+section{
+    padding: 4rem;
+}
+
+
+.first-section{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 650px;
+    background-color: var(--white2);
+}
+.first-section > div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 300px;
+}
+h1{
+    font-size: 4rem;
+    color: var(--dark1);
+    letter-spacing: 8px;
+}
+h4{
+    letter-spacing: 1px;
+}
+strong{
+    color: var(--red2);
+}
+.first-section h4{
+    color: var(--dark2);
+}
+.box-img-main{
+    max-width: 450px;
+    padding: 1rem;
+}
+.img-profile{
+    border-radius: 30%;
+    width: 100%;
+}
+.img-profile{
+    box-shadow: 1px 1px 1px 1px var(--red2);
+}
+
+.js-section{
+    background-color: var(--white3);
+}
+
+.second-section{
+    background-color: var(--gray);
+    gap: 1rem;
+    padding: 2rem;
+}
+h2{
+    color: var(--dark1);
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+
+.third-section{
+    background-color: var(--white3);
+    min-height: 48px;
+}
+thead{
+    background-color: var(--white1);
+    color: var(--dark1);
+    font-weight: bolder;
+}
+table, th, td{
+    border: 1px solid var(--white1);
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    margin-top: 2%;
+    text-align: center;
+}
+.tbody-config{
+    color: var(--dark2);
+    background-color: var(--gray);
+}
+table{
+    border-collapse: collapse;
+}
+
+footer{
+    background-color: var(--dark2);
+    min-height: 100px;
+}
+footer h2{
+    color: var(--white1);
+    letter-spacing: 3px;
+}
+
+
+.initial-page-button{
+    border-radius: 50%;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 60px;
+    right: 50px;
+    background-color: #fff;
+
+    text-align: center;
+    text-decoration: none;
+    line-height: 50px;
+}
+.caret-up-square
+{
+    border-radius: 50%;
+    min-height: 40px;
+    min-width: 40px;
+    right: 20px;
+    background-color: var(--white1);
+}
+.caret-up-square:hover
+{
+    background-color: var(--gray1);
+}
